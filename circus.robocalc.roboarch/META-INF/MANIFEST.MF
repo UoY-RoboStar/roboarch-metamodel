@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: circus.robocalc.roboarch;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: circus.robocalc.roboarch
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.core.runtime,
+ circus.robocalc.robochart;bundle-version="2.0.0"
+Export-Package: circus.robocalc.roboarch,
+ circus.robocalc.roboarch.impl,
+ circus.robocalc.roboarch.util

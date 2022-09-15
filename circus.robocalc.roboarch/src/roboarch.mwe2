@@ -1,0 +1,28 @@
+/********************************************************************************
+ * Copyright (c) 2022 University of York and others
+ *
+ * This program and the accompanying materials are made available under the
+ * terms of the Eclipse Public License 2.0 which is available at
+ * http://www.eclipse.org/legal/epl-2.0.
+ *
+ * SPDX-License-Identifier: EPL-2.0
+ *
+ * Contributors:
+ *   William Barnett - initial definition
+ ********************************************************************************/
+
+module roboarch
+
+Workflow {
+	bean = org.eclipse.emf.mwe.utils.StandaloneSetup {
+		scanClassPath = true
+		platformUri = ".."
+	}
+	component = org.eclipse.emf.mwe2.ecore.EcoreGenerator {
+		genModel = "platform:/resource/circus.robocalc.roboarch/model/roboarch.genmodel"
+		srcPath = "platform:/resource/circus.robocalc.roboarch/emf-gen"
+		generateEdit = true
+		generateEditor = true
+	}
+	
+}

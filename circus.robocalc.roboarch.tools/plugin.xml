@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ant.core.extraClasspathEntries">
+      <extraClasspathEntry
+            library="resources/lib/circus.robocalc.roboarch.tasks.jar">
+      </extraClasspathEntry>
+   </extension>
+   <extension
+         point="org.eclipse.epsilon.common.dt.tool">
+      <tool
+            class="circus.robocalc.roboarch.tools.Util"
+            defaultName="Util">
+      </tool>
+   </extension>
+   <extension
+         point="org.eclipse.ant.core.antTasks">
+      <antTask
+            class="circus.robocalc.roboarch.tasks.UtilTask"
+            library="resources/lib/circus.robocalc.roboarch.tasks.jar"
+            name="roboarch2chart.register">
+      </antTask>
+      <antTask
+            class="circus.robocalc.roboarch.tasks.AntHelper"
+            library="resources/lib/circus.robocalc.roboarch.tasks.jar"
+            name="roboarch2chart.anthelper">
+      </antTask>
+      <antTask
+            class="circus.robocalc.roboarch.tasks.EnhancedLoadEmfModelTask"
+            library="resources/lib/circus.robocalc.roboarch.tasks.jar"
+            name="roboarch2chart.load">
+      </antTask>
+      <antTask
+            class="circus.robocalc.roboarch.tasks.CreateModelTask"
+            library="resources/lib/circus.robocalc.roboarch.tasks.jar"
+            name="roboarch2chart.createmodel">
+      </antTask>
+   </extension>
+
+</plugin>
