@@ -1,7 +1,7 @@
 # RoboArch Tool
 
 | Repository                                                                        |        |
-| --------------------------------------------------------------------------------- |:-- ---:|
+| :---                                                                              | :---:  |
 | [roboarch-metamodel](https://github.com/UoY-RoboStar/roboarch-metamodel)          |   <--  |
 | [roboarch-textual](https://github.com/UoY-RoboStar/roboarch-textual)              |        |
 | [roboarch2chart-epsilon](https://github.com/UoY-RoboStar/roboarch2chart-epsilon)  |        |
